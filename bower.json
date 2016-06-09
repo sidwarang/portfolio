@@ -1,0 +1,31 @@
+{
+  "name": "portfolio",
+  "description": "my portfolio app",
+  "main": "app.js",
+  "authors": [
+    "sidwarang <siddharth.warang@yahoo.com>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "siddharth",
+    "warang",
+    "portfolio",
+    "resume",
+    "software",
+    "ui",
+    "web"
+  ],
+  "homepage": "https://github.com/sidwarang/portfolio",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.6",
+    "jquery": "^3.0.0",
+    "bootstrap": "^3.3.6"
+  }
+}
