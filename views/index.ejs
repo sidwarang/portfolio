@@ -1,11 +1,385 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<head>
+    <title>Siddhart Warang</title>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel='stylesheet' type='text/css'/>
+    <link href="/bower_components/bootstrap/dist/css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="application/x-javascript"> addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        } </script>
+    <!--[if lt IE 9]>
+    <script src="/bower_components/html5shiv/dist/html5shiv.js"></script>
+    <script src="/bower_components/respond/dest/respond.min.js"></script>
+    <![endif]-->
+    <link href='http://fonts.googleapis.com/css?family=Kreon:300,400,700' rel='stylesheet' type='text/css'>
+    <!-- start plugins -->
+    <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+    <script rel="stylesheet" href="/bower_components/fancybox/source/jquery.fancybox.css"></script>
+    <script>
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+    </script>
+    <!----font-Awesome----->
+    <link rel="stylesheet" href="/bower_components/font-awesome/css/font-awesome.min.css">
+    <!----font-Awesome----->
+</head>
+<body>
+<div class="header_bg" id="home"><!-- start header -->
+    <div class="container">
+        <div class="row header text-center specials">
+            <div class="h_logo">
+                <a href="index.html"><img src="images/logo.png" alt="" class="responsive"/></a>
+            </div>
+            <nav class="top-nav">
+                <ul class="top-nav nav_list">
+                    <li class="page-scroll"><a href="#about">About</a></li>
+                    <li class="page-scroll"><a href="#portfolio">portfolio</a></li>
+                    <li class="logo page-scroll"><a title="hexa" href="index.html"><img src="images/logo.png" alt=""
+                                                                                        class="responsive"/></a></li>
+                    <li class="page-scroll"><a href="#skills">skills</a></li>
+                    <li class="page-scroll"><a href="#contact">get in touch</a></li>
+                </ul>
+                <a href="#" id="pull"><img src="images/nav-icon.png" title="menu"/></a>
+            </nav>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<div class="main_bg" id="about"><!-- start about us -->
+    <div class="container">
+        <div class="row about">
+            <div class="col-md-3 about_img">
+                <img src="images/user_3.png" alt="" class="responsive"/>
+            </div>
+            <div class="col-md-9 about_text">
+                <h3>siddharth warang</h3>
+                <h4>software engineer & web developer</h4>
+                <p>Hi, I'm a passionate software developer and web designer who loves to build easy-to-use, feature-rich
+                    software & functional, minimal websites. I have a Bachelor's degree in Computer Engineering & I'm
+                    doing my Master's in Software Engineering from San Jose State University. I'm also looking for some
+                    awesome internship opportunities where my technical, professional & interpersonal skills can be used
+                    for ensuring the company's success while I also get to aquire expertise in new fields and strengthen
+                    my skill set. Maybe, even obtain a few super-human abilities!</p>
+                <div>
+                    <p>&nbsp;</p>
+                    <table style="width:100%">
+                        <tr>
+                            <td>
+                                <div class="resume"><a href="/resume">DOWNLOAD MY RESUME</a></div>
+                            </td>
+                            <td>
+                                <div class="soc_icons_abt navbar-right">
+                                    <ul class="list-unstyled text-center">
+                                        <li><a href="https://www.facebook.com/siddharth.warang"><i
+                                                        class="fa fa-facebook"></i></a></li>
+                                        <li><a href="https://twitter.com/sid_380"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="https://plus.google.com/u/0/114668542699668707011"><i
+                                                        class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/siddharthwarang"><i
+                                                        class="fa fa-linkedin"></i></a></li>
+                                        <li><a href="https://instagram.com/sidwarang1/"><i class="fa fa-instagram"></i></a>
+                                        </li>
+                                        <li><a href="https://github.com/sidwarang"><i class="fa fa-github"></i></a></li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="education text-center">
+    <div class="container">
+        <div class="edu-info">
+            <h2 class="style">Education And Experience</h2>
+        </div>
+        <div class="strip text-center"><img src="images/edu.png" alt=" "/></div>
+        <div class="edu-grids">
+            <div class="col-md-4 edu-grid">
+                <p>2009 - 2013</p><span>Graduated</span>
+                <img src="images/arrow.png" alt=""/>
+                <div class="edu-border">
+                    <div class="edu-grid-master">
+                        <h3>BACHELORS DEGREE OF COMPUTER ENGINEERING</h3>
+                        <h4>Mumbai University</h4>
+                    </div>
+                    <div class="edu-grid-info">
+                        <h5>Equipped myself with various technologies & built projects to display my skills.
+                            Participated in coding & gaming events to challenge myself</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 edu-grid">
+                <p>2014 - 2016</p><span>In-Progress</span>
+                <img src="images/arrow.png" alt=""/>
+                <div class="edu-border">
+                    <div class="edu-grid-master">
+                        <h3>MASTER DEGREE OF SOFTWARE ENGINEERING</h3>
+                        <h4>San Jose State University</h4>
+                    </div>
+                    <div class="edu-grid-info">
+                        <h5>Aquired skills in S/W Development methods & Design Patterns,
+                            Cloud, Virtualization & Enterprise Technologies, Distributed Systems & Business
+                            Intelligence</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 edu-grid">
+                <p>2014</p><span>Jan - June</span>
+                <img src="images/arrow.png" alt=""/>
+                <div class="edu-border">
+                    <div class="edu-grid-master">
+                        <h3>ACE DERIVATIVES & COMMODITY EXCHANGE LTD.</h3>
+                        <h4>Software Engineer</h4>
+                    </div>
+                    <div class="edu-grid-info">
+                        <h5>
+                            I gained experience in building applications using .NET, HTML, JavaScript, CSS, AJAX and
+                            JQuery.
+                            Also, handled Deployment, Testing & Debugging activities.
+                        </h5>
+                    </div>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+
+</div>
+
+<!--my skill-->
+<div class="my-skills text-center" id="skills">
+    <div class="container">
+        <h3>MY SKILLS</h3>
+        <!--<div class="strip text-center"><img src="images/skill.png" alt=" "/></div>-->
+        <div class="skill-grids">
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-1" value="95"></div>
+                <p>Java</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-2" value="85"></div>
+                <p>Python</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-3" value="90"></div>
+                <p>C / C++ / C#</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-4" value="95"></div>
+                <p>Html 5 / CSS 3 / JavaScript</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-5" value="80"></div>
+                <p>MEAN Stack</p>
+            </div>
+            <div class="col-md-2 skills-grid text-center">
+                <div class="circle" id="circles-6" value="95"></div>
+                <p>SQL / MySQL</p>
+            </div>
+            <div class="clearfix"></div>
+            <script type="text/javascript" src="/javascripts/circles.js"></script>
+            <script>
+
+                var colors = [
+                    ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff'], ['#6ed4c0', '#ffffff']
+                ];
+                for (var i = 1; i <= 7; i++) {
+                    var child = document.getElementById('circles-' + i),
+                            percentage = child.getAttribute('value');
+
+                    Circles.create({
+                        id: child.id,
+                        percentage: percentage,
+                        radius: 80,
+                        width: 10,
+                        number: percentage / 1,
+                        text: '%',
+                        colors: colors[i - 1]
+                    });
+                }
+
+            </script>
+        </div>
+    </div>
+</div>
+<!--//my skill-->
+
+<!--portfolio-->
+<div class="gallery-section text-center" id="portfolio">
+    <div class="container">
+        <h3>PORTFOLIO</h3>
+        <!--<div class="strip text-center"><img src="images/port.png" alt=" "/></div>-->
+        <p>Well, </p>
+        <div class="gallery-grids">
+            <div class="top-gallery">
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p1.jpg" class="swipebox"><img src="images/p1.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>e-Shopping Portal</h4>
+                            <p>WEB APPLICATION</p>
+                            <div class="button"><a href="https://github.com/sidwarang/ecommerce-order-mgmt"
+                                                   class="swipebox">VIEW</a></div>
+                        </div>
+                </div>
+                </a>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p2.jpg" class="swipebox"><img src="images/p2.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>TrendGinX.com</h4>
+                            <p>TEXT MINING & SENTIMENT ANALYSIS APPLICATION</p>
+                            <div class="button"><a href="https://github.com/omkargudekar/trendginx" class="swipebox">VIEW</a>
+                            </div>
+                        </div>
+                </div>
+                </a>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p3.jpg" class="swipebox"><img src="images/p3.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>CrossMigrate</h4>
+                            <p>VIRTUALIZATION APPLICATION</p>
+                            <div class="button"><a href="images/p3.jpg" class="swipebox">VIEW</a></div>
+                        </div>
+                </div>
+                </a>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p4.jpg" class="swipebox"><img src="images/p4.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>Demolition Tank Game</h4>
+                            <p>JAVA GAME</p>
+                            <div class="button"><a href="https://github.com/sidwarang/Demolition-Tank" class="swipebox">VIEW</a>
+                            </div>
+                        </div>
+                </div>
+                </a>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p5.jpg" class="swipebox"><img src="images/p5.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>Safeway Queue Simulation Model</h4>
+                            <p>PYTHON APPLICATION</p>
+                            <div class="button"><a href="https://github.com/akshaybhasme/cmpe275project2"
+                                                   class="swipebox">VIEW</a></div>
+                        </div>
+                </div>
+                </a>
+                <div class="col-md-4 gallery-grid gallery1">
+                    <a href="images/p6.jpg" class="swipebox"><img src="images/p6.jpg" class="img-responsive" alt="/">
+                        <div class="textbox">
+                            <h4>Face-Rec</h4>
+                            <p>IMAGE PROCESSING APPLICATION</p>
+                            <div class="button"><a href="https://github.com/sidwarang/face-rec"
+                                                   class="swipebox">VIEW</a></div>
+                        </div>
+                </div>
+                </a>
+                <div class="clearfix"></div>
+            </div>
+            <!--<link rel="stylesheet" href="/bower_components/swipebox/src/css/swipebox.css">-->
+            <!--<script src="/bower_components/swipebox/src/js/jquery.swipebox.min.js"></script>-->
+            <!--<script type="text/javascript">-->
+                <!--jQuery(function ($) {-->
+                    <!--$(".swipebox").swipebox();-->
+                <!--});-->
+            <!--</script>-->
+        </div>
+    </div>
+</div>
+<div class="footer_bg" id="contact"><!-- start footer -->
+    <div class="container">
+        <div class="row footer">
+            <div class="col-md-8 contact_left">
+                <h3>get in touch</h3>
+                <p>In order to get in touch use the contact form below:</h4>
+                <form method="post" action="contact-post.html">
+                    <input type="text" value="Name (Required)" onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = 'Name';}">
+                    <input type="text" value="Email (Required)" onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = 'Email';}">
+                    <input type="text" value="Subject" onfocus="this.value = '';"
+                           onblur="if (this.value == '') {this.value = 'Subject';}">
+                    <textarea onfocus="if(this.value == 'Your Message here....') this.value='';"
+                              onblur="if(this.value == '') this.value='Your Message here....;">Your Message here....</textarea>
+                    <span class="pull-right"><input type="submit" value="submit us"></span>
+                </form>
+            </div>
+            <div class="col-md-4  contact_right">
+                <p><span>Lorem Ipsum is simply dummy text: </span> Lorem Ipsum has been the industry's standard dummy
+                    text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+                    type specimen book. It has survived not only five centuries, but also the leap into electronic
+                    typesetting, remaining essentially unchanged. </p>
+                <ul class="list-unstyled address">
+                    <li><i class="fa fa-map-marker"></i><span>San Jose, CA 95112</span></li>
+                    <li><i class="fa fa-phone"></i><span>+1 (669) 253 9030</span></li>
+                    <li><i class="fa fa-envelope"></i><a href="mailto:siddharth.warang@yahoo.com">siddharth.warang(at)yahoo.com</a>
+                    </li>
+                    <div class="soc_icons navbar-right">
+                        <ul class="list-unstyled text-center">
+                            <li><a href="https://www.facebook.com/siddharth.warang"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/sid_380"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://plus.google.com/u/0/114668542699668707011"><i
+                                            class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/siddharthwarang"><i class="fa fa-linkedin"></i></a>
+                            </li>
+                            <li><a href="https://instagram.com/sidwarang1/"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://github.com/sidwarang"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer1_bg"><!-- start footer1 -->
+    <div class="container">
+        <div class="row  footer">
+            <div class="copy text-center">
+                <p class="link"><span>&#169; All rights reserved | Template by&nbsp;<a href="http://w3layouts.com/"> W3Layouts</a></span>
+                </p>
+                <a href="#home" id="toTop" style="display: block;"><span id="toTopHover"
+                                                                         style="opacity: 1;"> </span></a>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(function () {
+                $('a[href*=#]:not([href=#])').click(function () {
+                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+                            return false;
+                        }
+                    }
+                });
+            });
+        </script>
+        <!---- start-smoth-scrolling---->
+    </div>
+</div>
+</body>
 </html>

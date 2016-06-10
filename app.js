@@ -24,6 +24,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 app.use('/users', users);
+app.use('/resume', function(req, res, next) {
+    var file = __dirname + '/public/files/Resume of Siddharth Warang - Web Developer.pdf';
+    res.download(file);
+    // res.render('index', { title: 'Express' });
+});
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
